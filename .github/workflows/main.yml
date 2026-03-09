@@ -28,9 +28,9 @@ jobs:
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
         with:
-          context: ./front/my-app               # Kontekst build-a (folder u kome se nalazi Dockerfile)
-          file: ./front/my-app/Dockerfile       # Put do Dockerfile-a
-          push: true                            # Šalje image na Docker Hub
+          context: ./WeatherApp/WebApplication1 front/web-app/              # Kontekst build-a (folder u kome se nalazi Dockerfile)
+          file: ./WeatherApp/WebApplication1 front/web-app/Dockerfile       # Put do Dockerfile-a
+          push: true                                                        # Šalje image na Docker Hub
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/weather-frontend:latest  # Naziv slike na hub-u
 
       # KORAK 4: Deploy na server preko SSH (Ulazi na tvoj server i pokreće docker-compose komande)
