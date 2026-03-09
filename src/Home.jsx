@@ -31,6 +31,7 @@ const Home = () => {
                         <th>Temperature C</th>
                         <th>Temperature F</th>
                         <th>Weather summary</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,6 +42,7 @@ const Home = () => {
                                 <td>{oneDayWweather.temperatureC}</td>
                                 <td>{oneDayWweather.temperatureF}</td>
                                 <td>{oneDayWweather.summary}</td>
+                                <td><button>delete</button></td>
                             </tr>
                         )))}
                 </tbody>
