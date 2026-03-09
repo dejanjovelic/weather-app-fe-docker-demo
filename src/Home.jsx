@@ -24,6 +24,10 @@ const Home = () => {
 
     return (
         <div className="weather-data-table-container">
+            <div className="header-wrapper">
+                <h1>Waether Data</h1>
+            </div>
+
             <table className="weather-data-table">
                 <thead>
                     <tr>
@@ -51,5 +55,3 @@ const Home = () => {
     )
 }
 export default Home;
-
-// {"date":"2026-03-04","temperatureC":33,"temperatureF":91,"summary":"Chilly"},
