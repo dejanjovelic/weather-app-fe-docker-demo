@@ -43,13 +43,13 @@ jobs:
           port: ${{ secrets.SSH_PORT }}         # SSH port
           script: |
             # Ulazi u folder gde je docker-compose.yml
-            cd demo-app
+            cd /root/app/
 
             # Skida najnovije verzije slika
-            docker-compose pull
+            docker compose pull
             
             # Gasi stare kontejnere
-            docker-compose down
+            docker compose down
 
             # Podigne nove
-            docker-compose up -d
+            docker compose up -d
