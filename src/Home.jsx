@@ -46,7 +46,13 @@ const Home = () => {
                                 <td>{oneDayWweather.temperatureC}</td>
                                 <td>{oneDayWweather.temperatureF}</td>
                                 <td>{oneDayWweather.summary}</td>
-                                <td><button>delete</button></td>
+                                <td>
+                                    <button
+                                        className="weather-data-table-delete-btn"
+                                    >
+                                        Delete
+                                    </button>
+                                </td>
                             </tr>
                         )))}
                 </tbody>
